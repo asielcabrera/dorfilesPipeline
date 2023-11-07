@@ -62,7 +62,6 @@ extension Process {
     
         process.launch()
         process.waitUntilExit()
-    
         stdout.fileHandleForReading.readabilityHandler = nil
         stderr.fileHandleForReading.readabilityHandler = nil
         Q.async {
