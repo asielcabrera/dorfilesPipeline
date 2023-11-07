@@ -6,10 +6,11 @@
 //
 
 import Terminal
+import Logging
 
 public struct UpdateSettingProcedure: Procedure {
     public static var terminal = Terminal()
-    
+    public static var logger = Logger(label: "com.shiroe.dotfiles.UpdateSettingProcedure")
     public static func main() {
         let apps = ["Safari", "Finder", "Dock", "Mail", "SystemUIServer"]
         let commands = [
@@ -28,7 +29,7 @@ public struct UpdateSettingProcedure: Procedure {
             
         ]
         
-        print("Updating OSX settings")
+        logger.info("Updating OSX settings")
         
         terminal.shell.chflags("nohidden ~/Library")
         allDefaults(commands)

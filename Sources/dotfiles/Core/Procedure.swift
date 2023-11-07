@@ -6,10 +6,11 @@
 //
 
 import Terminal
-
+import Logging
 
 public protocol Procedure {
     static var terminal: Terminal { get set }
+    static var logger: Logger { get set }
     static func main()
 }
 

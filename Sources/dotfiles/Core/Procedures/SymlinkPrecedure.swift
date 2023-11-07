@@ -6,12 +6,12 @@
 //
 
 import Terminal
+import Logging
 
 public struct SymlinkPrecedure: Procedure {
     public static var terminal = Terminal()
-    
+    public static var logger = Logger(label: "com.shiroe.dotfiles.SymlinkPrecedure")
     public static func main() {
-        print("Creating symlinks")
-        
+        logger.info("Creating symlinks")
     }
 }

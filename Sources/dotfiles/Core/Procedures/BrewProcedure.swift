@@ -10,7 +10,7 @@ import Logging
 
 public struct BrewProcedure: Procedure {
     public static var terminal = Terminal()
-    internal static var logger = Logger(label: "com.shiroe.dotfiles")
+    public static var logger = Logger(label: "com.shiroe.dotfiles.BrewProcedure")
     public static func main() {
         if checkBrewIsInstalled() {
             InstallPackagesWithBrew()
@@ -26,12 +26,9 @@ public struct BrewProcedure: Procedure {
     
     internal static func InstallBrew() {
         logger.info("installing brew")
-//        print("installing brew")
     }
     
     internal static func InstallPackagesWithBrew() {
         logger.info("installing packages with brew")
-        logger.error("mensaje de prueba de error")
-//        print("installing packages with brew")
     }
 }
