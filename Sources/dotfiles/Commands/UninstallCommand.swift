@@ -14,6 +14,6 @@ struct UninstallCommand: ParsableCommand {
         abstract: "Uninstall programs and associated dotfiles.")
     
     mutating func run() throws {
-        
+    
     }
 }

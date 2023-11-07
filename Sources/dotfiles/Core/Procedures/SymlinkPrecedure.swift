@@ -12,5 +12,6 @@ public struct SymlinkPrecedure: Procedure {
     
     public static func main() {
         print("Creating symlinks")
+        
     }
 }

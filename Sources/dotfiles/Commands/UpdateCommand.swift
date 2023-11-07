@@ -11,5 +11,5 @@ struct UpdateCommand: ParsableCommand {
     static let configuration = CommandConfiguration(
         commandName: "update",
         abstract: "Update programs and associated dotfiles.")
-    
+
 }
